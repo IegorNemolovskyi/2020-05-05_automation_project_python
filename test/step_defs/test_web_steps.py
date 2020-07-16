@@ -25,7 +25,7 @@ def click_google_app(browser, text):
 
 @when(parsers.parse('I click "{text}" icon'))
 def click_icon(browser, text):
-    browser.switch_to.frame(0)
+    browser.switch_to.frame(browser.find_element_by_xpath('//iframe[@role="presentation"]'))
     xpath = '//span[contains(text(),"%s")]/..' % text
     link = browser.find_element_by_xpath(xpath)
     link.click()

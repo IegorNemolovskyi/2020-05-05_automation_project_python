@@ -30,7 +30,7 @@ def browser(config):
         b = selenium.webdriver.Firefox()
     elif config['browser'] == 'Headless Chrome':
         opts = selenium.webdriver.ChromeOptions()
-        opts.add_argument('headless')
+        opts.add_argument('--headless')
         b = selenium.webdriver.Chrome(options=opts)
     elif config['browser'] == 'Headless Firefox':
         opts = selenium.webdriver.FirefoxOptions()
