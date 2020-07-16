@@ -1,5 +1,5 @@
 {
-  "browser": "Firefox",
+  "browser": "Chrome",
   "implicit_wait": 10,
   "GOOGLE_HOME": "https://www.google.com/?hl=en"
 }
