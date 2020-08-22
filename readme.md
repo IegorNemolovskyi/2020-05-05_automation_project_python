@@ -14,4 +14,5 @@
     https://testautomationu.applitools.com/selenium-webdriver-python-tutorial/
  5. Web Element Locator Strategies
     https://testautomationu.applitools.com/web-element-locator-strategies/
-
+6. Automated Visual Testing with Python
+    https://testautomationu.applitools.com/visual-testing-python/
