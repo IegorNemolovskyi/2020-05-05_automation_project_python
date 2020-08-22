@@ -109,3 +109,6 @@ venv.bak/
 /report.html
 /assets/
 /.idea/
+
+# My files
+ApiKey.py
