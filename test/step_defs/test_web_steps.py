@@ -1,4 +1,5 @@
 # Import
+import time
 from pytest_bdd import scenarios, when, then, parsers
 from pages.result import GoogleResultPage
 from pages.search import GoogleSearchPage
@@ -80,6 +81,7 @@ def redirect_google_search(browser, phrase, eyes):
     xpath = '//h2[@class="h-c-headline h-c-headline--two content-animate content-animation"]'
     expected_text = phrase
     element = browser.find_element_by_xpath(xpath)
+    time.sleep(3)
     assert element.text.lower() == expected_text.lower()
     validate_window(browser, eyes, tag='How_Google_search_works_page')
 
