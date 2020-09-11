@@ -9,6 +9,7 @@ verify_ssl = true
 pytest = "*"
 pytest-bdd = "*"
 selenium = "*"
+eyes-selenium = "*"
 
 [requires]
 python_version = "3.8"

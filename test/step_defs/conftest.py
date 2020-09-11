@@ -47,3 +47,4 @@ def browser(config):
 @given('the Google.com home page is displayed(english)')
 def google_home(browser, config):
     browser.get(config["GOOGLE_HOME"])
+    browser.maximize_window()
