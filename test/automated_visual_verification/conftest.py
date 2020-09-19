@@ -2,9 +2,13 @@ import pytest
 # import for Applitools Visual Verification
 from applitools.selenium import Eyes
 from test.automated_visual_verification.config.base import APPLITOOLS_API_KEY
+from applitools.common import BatchInfo
 
 # Applitools Visual Verification variables
 APP_NAME='Google.com visual verification'
+
+# Batches
+batch_info = BatchInfo('Google Apps visual tests')
 
 
 # Applitools Visual Verification Fixture
@@ -15,6 +19,7 @@ def eyes():
 
 def initialize_eyes():
     eyes = Eyes()
+    eyes.batch = batch_info
     eyes.api_key = APPLITOOLS_API_KEY
     return eyes
 
@@ -32,3 +37,4 @@ def validate_window(b, eyes, tag):
     open_eyes(b, eyes)
     eyes.check_window(tag=tag)
     eyes.close()
+
